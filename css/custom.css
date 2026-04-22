@@ -67,6 +67,7 @@ html,
 body{
 	width: 100%;
 	overflow-x: clip;
+	scroll-behavior: smooth;
 }
 
 body{
@@ -374,7 +375,7 @@ a:focus{
 
 .dark-section{
 	background-color: var(--primary-color);
-	background-image: url('../images/dark-section-bg-image.png');
+	background-image: url('../images2/hero.jpg');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
