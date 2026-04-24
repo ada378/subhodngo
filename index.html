@@ -46,66 +46,64 @@
 	</div>
 	<!-- Preloader End -->
 
-    <!-- Header Start -->
-	<header class="main-header">
-		<div class="header-sticky">
-			<nav class="navbar navbar-expand-lg">
-				<div class="container">
-					<!-- Logo Start -->
-					<a class="navbar-brand" href="index.html">
-						<img src="images2/Logo (1).png" alt="Logo" style="width:180px;">
-					</a>
-					<!-- Logo End -->
-
-                    <!-- Main Menu Start -->
-                    <div class="collapse navbar-collapse main-menu">
-                        <div class="nav-menu-wrapper">
-                            <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="index.html">Home</a>
-                                    <ul>
-                                        <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Version 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-3.html">Home - Version 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-4.html">Home - Version 3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
-                                    <ul>
-                                        <li class="nav-item"><a class="nav-link" href="service-single.html">Service Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="program-single.html">Program Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="team-single.html">Team Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="image-gallery.html">Image Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="video-gallery.html">Video Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                        
-                        <!-- Header Btn Start -->
-                        <div class="header-btn">
-                            <a href="contact.html" class="btn-default btn-highlighted">Donate Now</a>
-                        </div>
-                        <!-- Header Btn End -->
-                    </div>
-					<!-- Main Menu End -->
-					<div class="navbar-toggle"></div>
-				</div>
-			</nav>
-			<div class="responsive-menu"></div>
+<!-- Header Start -->
+<header class="header">
+	<div class="top-bar">
+		<div class="top-bar-content">
+			<div class="marquee-text">
+				<span>Sehat Card</span>
+				<span>Free Health Camp</span>
+				<span>Free Education</span>
+				<span>Women Empowerment</span>
+				<span>Blood Donation</span>
+				<span>Rural Development</span>
+				<span>Clean India</span>
+				<span>Food for All</span>
+			</div>
 		</div>
-	</header>
+	</div>
+	<div class="header-main">
+		<div class="container">
+			<div class="header-logo">
+				<a href="index.html">
+					<img src="images2/Logo (1).png" alt="Logo">
+				</a>
+			</div>
+			<nav class="header-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="SehatCard.html">Sehat Card</a></li>
+					<li><a href="how-it-works.html">How It Works ?</a></li>
+					<li><a href="Registration.html">Registration</a></li>
+					<li><a href="FAQs.html">FAQs</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<div class="header-btn">
+				<a href="contact.html">Donate Now</a>
+			</div>
+			<button class="mobile-menu-btn" onclick="toggleMenu()">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</div>
+</header>
+<!-- Header End -->
 	<!-- Header End -->
 
-    <!-- Hero Section Start -->
-    <div class="hero dark-section">
+<script>
+function toggleMenu() {
+	$('.mobile-menu-btn').toggleClass('active');
+	$('.header-nav').slideToggle();
+}
+</script>
+
+<!-- Hero Section Start -->
+    <div class="hero dark-section" style="padding-top: 118px;">
         <div class="container">
             <div class="row">
                 <div class="col-xl-10">
@@ -179,8 +177,8 @@
                         <!-- Hero Counter Box Start -->
                         <div class="hero-counter-box wow fadeInUp" data-wow-delay="0.2s">
                             <h2><span class="counter">180</span><sup>+</sup></h2>
-<h3>Active Volunteers</h3>
-                        <p>A passionate network of volunteers working across India.</p>
+                        <h3>Active Volunteers</h3>
+                            <p>A passionate network of volunteers working across India.</p>
                         </div>
                         <!-- Hero Counter Box End -->
                     </div>     
@@ -850,19 +848,9 @@
 
     <!-- Our Causes Section Start -->
     <div class="our-causes">
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                <div class="col-xl-6">
-                    <!-- Our Causes Image Start -->
-                    <div class="our-causes-image">
-                        <figure class="image-anime">
-                            <img src="images2/pexels-swastikarora-12818157.jpg" alt="">
-                        </figure>
-                    </div>
-                    <!-- Our Causes Image End -->
-                </div>
-
-                <div class="col-xl-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
                     <!-- Our Causes Content Start -->
                     <div class="our-causes-content">
                         <!-- Section Title Start -->
@@ -986,6 +974,33 @@
                         <!-- Our Causes Item List End -->
                     </div>
                     <!-- Causes Content End -->
+                    
+                    <!-- Our Causes Images Start -->
+                    <div class="our-causes-images" style="margin-top: 30px;">
+                        <div class="row" style="margin: 0;">
+                            <div class="col-3" style="padding: 0;">
+                                <figure class="image-anime">
+                                    <img src="images2/pexels-kolkatarchobiwala-18414618.jpg" alt="" style="width: 100%; height: 250px; object-fit: cover;">
+                                </figure>
+                            </div>
+                            <div class="col-3" style="padding: 0;">
+                                <figure class="image-anime">
+                                    <img src="images2/pexels-nazib-khan-68267622-8467880.jpg" alt="" style="width: 100%; height: 250px; object-fit: cover;">
+                                </figure>
+                            </div>
+                            <div class="col-3" style="padding: 0;">
+                                <figure class="image-anime">
+                                    <img src="images2/pexels-mr-rabindra-bagh-3609059-17718721.jpg" alt="" style="width: 100%; height: 250px; object-fit: cover;">
+                                </figure>
+                            </div>
+                            <div class="col-3" style="padding: 0;">
+                                <figure class="image-anime">
+                                    <img src="images2/pexels-chance4clicks-26052076.jpg" alt="" style="width: 100%; height: 250px; object-fit: cover;">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Our Causes Images End -->
                 </div>
             </div>
         </div>
@@ -1759,127 +1774,78 @@
     <!-- Our Blog Section End -->
 
     <!-- Main Footer Start -->
-    <footer class="main-footer dark-section">
+    <footer class="main-footer">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-lg-4 col-md-6">
                     <!-- About Footer Start -->
                     <div class="about-footer">
                         <div class="footer-logo">
-                            <img src="images2/logo.svg" alt="">
+                            <img src="images2/Logo (1).png" alt="Logo">
                         </div>
                         <div class="about-footer-content">
-                            <p>We've gathered answers to the questions we hear most, making it easy for you to learn about our work, values, and the impact.</p>
+                            <p>Nadakhya NGO is dedicated to building a just and sustainable future by addressing healthcare, education, and social welfare across India.</p>
+                        </div>
+                        <div class="footer-social-links">
+                            <h3>Follow Us</h3>
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                     <!-- About Footer End -->
                 </div>
 
-                <div class="col-xl-8">
-                    <!-- Footer Links Box Start -->
-                    <div class="footer-links-box">
-                        <!-- Footer Links Start -->
-                        <div class="footer-links">
-                            <h2>Quick Links</h2>
-                            <ul>
-                                <li><a href="index-2.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="services.html">Our Services</a></li>
-                                <li><a href="blog.html">Blogs</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                        <!-- Footer Links End -->
-
-                        <!-- Footer Links Start -->
-                        <div class="footer-links">
-                            <h2>Our Programs</h2>
-                            <ul>
-                                <li><a href="program-single.html">Hospitals</a></li>
-                                <li><a href="program-single.html">Doctors</a></li>
-                                <li><a href="program-single.html">Nursing Home & Clinics</a></li>
-                                <li><a href="program-single.html">Pharmacy Store</a></li>
-                                <li><a href="program-single.html">Pathology Centre</a></li>
-                                <li><a href="program-single.html">Diagnostics Centre</a></li>
-                                <li><a href="program-single.html">Ambulance Services</a></li>
-                                <li><a href="program-single.html">Nadakhya Swasth Kendra</a></li>
-                            </ul>
-                        </div>
-                        <!-- Footer Links End -->
-
-                        <!-- Footer Links Start -->
-                        <div class="footer-links footer-location-info">
-                            <h2>Our Location</h2>
-                            <ul>
-                                <li><img src="images2/icon-location-accent.svg" alt="">123 MG Road, Connaught Place, New Delhi, India 110001</li>
-                            </ul>
-
-                            <!-- Footer Social Link Start -->
-                            <div class="footer-social-links">
-                                <h3>Follow Us On Socials:</h3>
-                                <ul>
-                                    <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- Footer Social Link End -->
-                        </div>
-                        <!-- Footer Links End -->                                                                  
+                <div class="col-lg-2 col-md-3">
+                    <!-- Footer Links Start -->
+                    <div class="footer-links">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
-                    <!-- Footer Links Box End -->
+                    <!-- Footer Links End -->
                 </div>
 
-                <div class="col-lg-12">
-                    <!-- Footer Body Start -->
-                    <div class="footer-body">
-                        <!-- Footer Newsletter Form Start -->
-                        <div class="footer-newsletter-form">
-                            <form id="newslettersForm" action="#" method="post">
-                                <div class="form-group">
-                                    <input type="email" name="mail" class="form-control" id="email" placeholder="Enter Email Address *" required>
-                                    <button type="submit" class="btn-default btn-highlighted">Subscribe</button>
-                                </div>
-                            </form>
-                        </div>
-                        <!-- Footer Newsletter Form End -->
-
-                        <!-- Footer Contact Items List Start -->
-                        <div class="footer-contact-items-list">                           
-                            <!-- Footer Contact Item Start -->
-                            <div class="footer-contact-item">
-                                <div class="icon-box">
-                                    <img src="images2/icon-mail-primary.svg" alt="">
-                                </div>
-                                <div class="footer-contact-item-content">
-                                    <h3>Email Address</h3>
-                                    <p><a href="mailto:info@domainname.com">info@domainname.com</a></p>
-                                </div>
-                            </div>
-                            <!-- Footer Contact Item End -->
-
-                            <!-- Footer Contact Item Start -->
-                            <div class="footer-contact-item">
-                                <div class="icon-box">
-                                    <img src="images2/icon-phone-primary.svg" alt="">
-                                </div>
-                                <div class="footer-contact-item-content">
-                                    <h3>Phone Number</h3>
-                                    <p><a href="tel:123456789">+(123) 456-789</a></p>
-                                </div>
-                            </div>
-                            <!-- Footer Contact Item End -->
-                        </div>
-                        <!-- Footer Contact Items List End -->
+                <div class="col-lg-3 col-md-3">
+                    <!-- Footer Links Start -->
+                    <div class="footer-links">
+                        <h2>Programs</h2>
+                        <ul>
+                            <li><a href="SehatCard.html">Sehat Card</a></li>
+                            <li><a href="how-it-works.html">How It Works</a></li>
+                            <li><a href="Registration.html">Registration</a></li>
+                            <li><a href="FAQs.html">FAQs</a></li>
+                        </ul>
                     </div>
-                    <!-- Footer Body End -->
+                    <!-- Footer Links End -->
                 </div>
 
+                <div class="col-lg-3 col-md-6">
+                    <!-- Footer Links Start -->
+                    <div class="footer-links footer-contact-info">
+                        <h2>Contact Us</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i> 26°09'00.1"N 85°23'26.3"E, Bihar, India</li>
+                            <li><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 999 999 9999</a></li>
+                            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@nadakhya.org">info@nadakhya.org</a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer Links End -->
+                </div>
+            </div>
+
+            <div class="row">
                 <div class="col-lg-12">
                     <!-- Footer Copyright Text Start -->
                     <div class="footer-copyright-text">
-                        <p>Copyright © 2026 All Rights Reserved.</p>
+                        <p>&copy; 2026 Nadakhya NGO. All Rights Reserved.</p>
                     </div>
                     <!-- Footer Copyright Text End -->
                 </div>
